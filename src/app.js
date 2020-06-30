@@ -9,7 +9,9 @@ app.use((req, res, next) => {
 });
 
 app.get("", (req, res) => {
-  res.json(data);
+  setTimeout(() => {
+    res.json(data);
+  }, 2000);
 });
 
 app.listen(port, () => {
